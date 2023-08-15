@@ -11,4 +11,6 @@ public interface IPlatformRepo
     Platform getPlatformById(int id);
     
     void CreatePlatform(Platform plat);
+    
+    void DeletePlatform(int id);
 }

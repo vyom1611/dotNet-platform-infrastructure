@@ -41,6 +41,7 @@ public class PlatformController : ControllerBase
     }
     
     [HttpPost("{platformCreateDto}", Name = "CreatePlatform")]
+    [Route("/CreatePlatform/{platformCreateDto}")]
     public ActionResult<PlatformReadDto> CreatePlatform(PlatformCreateDto platformCreateDto)
     {
         Console.WriteLine("--> Creating Platform...");
@@ -49,5 +50,20 @@ public class PlatformController : ControllerBase
         _repository.SaveChanges();
         var platformReadDto = _mapper.Map<PlatformReadDto>(platformModel);
         return CreatedAtRoute(nameof(getPlatformById), new {Id = platformReadDto.Id}, platformReadDto);
+    }
+
+    [HttpDelete("{id}", Name = "DeletePlatform")]
+    [Route("/DeletePlatform/{id:int}")]
+    public ActionResult<PlatformReadDto> DeletePlatform(int id)
+    {
+        Console.Write("--> Deleting Platform...");
+        var platformModel = _repository.getPlatformById(id);
+        if (platformModel.Equals(null))
+        {
+            return NotFound();
+        }
+        _repository.DeletePlatform(id);
+        _repository.SaveChanges();
+        return NoContent();
     }
 }

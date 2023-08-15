@@ -36,4 +36,15 @@ public class PlatformRepo : IPlatformRepo
         _context.Platforms.Add(plat);
         
     }
+    
+    public void DeletePlatform(int id)
+    {
+        if (id == 0)
+        {
+            throw new ArgumentNullException(nameof(id));
+        }
+
+        _context.Platforms.Remove(_context.Platforms.FirstOrDefault(p => p.Id == id));
+        _context.SaveChanges();
+    }
 }
