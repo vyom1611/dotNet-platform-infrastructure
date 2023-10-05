@@ -40,8 +40,7 @@ public class PlatformController : ControllerBase
         return NotFound();
     }
     
-    [HttpPost("{platformCreateDto}", Name = "CreatePlatform")]
-    [Route("/CreatePlatform/{platformCreateDto}")]
+    [HttpPost]
     public ActionResult<PlatformReadDto> CreatePlatform(PlatformCreateDto platformCreateDto)
     {
         Console.WriteLine("--> Creating Platform...");
@@ -52,8 +51,8 @@ public class PlatformController : ControllerBase
         return CreatedAtRoute(nameof(getPlatformById), new {Id = platformReadDto.Id}, platformReadDto);
     }
 
-    [HttpDelete("{id}", Name = "DeletePlatform")]
-    [Route("/DeletePlatform/{id:int}")]
+
+    [HttpDelete("{id}")]
     public ActionResult<PlatformReadDto> DeletePlatform(int id)
     {
         Console.Write("--> Deleting Platform...");
@@ -66,4 +65,5 @@ public class PlatformController : ControllerBase
         _repository.SaveChanges();
         return NoContent();
     }
+
 }

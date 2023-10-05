@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "N3eIoiZNqj+zLrJsQIZR4uZ/CW/zs3lIpllLzsloN7fq8zYLA2p6C5IqH5hSWgH0LFni3CU8VmdBQgnjW00Zig==",
+  "success": true,
+  "projectFilePath": "/Users/vyom/Desktop/ASPNET Microservice/PlatformService/CommandService/CommandService.csproj",
+  "expectedPackageFiles": [
+    "/Users/vyom/.nuget/packages/microsoft.aspnetcore.openapi/7.0.0/microsoft.aspnetcore.openapi.7.0.0.nupkg.sha512",
+    "/Users/vyom/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/vyom/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/Users/vyom/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "/Users/vyom/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "/Users/vyom/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "/Users/vyom/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

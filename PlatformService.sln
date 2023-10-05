@@ -2,10 +2,13 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatformService", "PlatformService\PlatformService.csproj", "{92921E63-8D75-480A-8AC1-3E393AC25436}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2BD3FABB-4542-4967-AF7B-ABAABE1F0B6E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kubernetes", "Kubernetes", "{2BD3FABB-4542-4967-AF7B-ABAABE1F0B6E}"
 	ProjectSection(SolutionItems) = preProject
-		docker-compose.yml = docker-compose.yml
+		platforms-depl.yml = platforms-depl.yml
+		platforms-np-srv.yml = platforms-np-srv.yml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandService", "CommandService\CommandService.csproj", "{81036AFE-0C36-4899-8310-07C91B08A50F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,5 +20,9 @@ Global
 		{92921E63-8D75-480A-8AC1-3E393AC25436}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92921E63-8D75-480A-8AC1-3E393AC25436}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92921E63-8D75-480A-8AC1-3E393AC25436}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81036AFE-0C36-4899-8310-07C91B08A50F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81036AFE-0C36-4899-8310-07C91B08A50F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81036AFE-0C36-4899-8310-07C91B08A50F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81036AFE-0C36-4899-8310-07C91B08A50F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
